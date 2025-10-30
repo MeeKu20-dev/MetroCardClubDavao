@@ -8,8 +8,9 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-gray-100 flex h-screen">
-    <aside class="w-64 bg-white border-r border-gray-200 flex flex-col">
+<body class="bg-gray-100 h-screen">
+
+    <aside class="fixed top-0 left-0 h-full w-64 bg-white border-r border-gray-200 flex flex-col">
         <div class="flex items-center justify-center h-32 border-b border-gray-200">
             <img src="{{ asset('CasinoLogo-8.png') }}" alt="Logo" class="w-30 h-30 object-contain">
         </div>
@@ -21,7 +22,7 @@
         </nav>
     </aside>
 
-    <main class="flex-1 p-6">
+    <main class="ml-64 p-6">
         @yield('content')
     </main>
 </body>

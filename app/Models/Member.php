@@ -22,5 +22,14 @@ class Member extends Model
         'mobile_number',
         'nationality',
         'email',
+        'souce_of_income',
+        'business_name',
+        'business_nature',
+        'employer_name',
+        'work_nature',
+        'politcal_exposed',
+        'emergency_name',
+        'emergency_relationship',
+        'emergency_contact',
     ];
 }

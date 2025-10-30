@@ -29,7 +29,17 @@ class RegistrationController extends Controller
             'mobile_number' => 'required|string|max:20',
             'nationality' => 'required|string|max:50',
             'email' => 'required|email|max:100',
+            'source_of_income' => 'required|string|max:100',
+            'business_name' => 'nullable|string|max:150',
+            'business_nature' => 'nullable|string|max:150',
+            'employer_name' => 'nullable|string|max:150',
+            'work_nature' => 'nullable|string|max:150',
+            'political_exposed' => 'required|string|max:10',
+            'emergency_name' => 'required|string|max:150',
+            'emergency_relationship' => 'required|string|max:100',
+            'emergency_contact' => 'required|string|max:20',
         ]);
+
 
         Member::create($validated);
 
